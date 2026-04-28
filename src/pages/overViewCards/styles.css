@@ -1,0 +1,75 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  min-width: 220px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0;
+  font-weight: 500;
+}
+
+.card-value {
+  font-size: 28px;
+  color: #111827;
+  margin: 4px 0 4px 0 !important;
+  font-weight: 600;
+}
+
+.card-change {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.change-positive {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.change-negative {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.overview-cards-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 12px;
+  padding: 8px 4px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.overview-cards-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overview-cards-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overview-cards-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.overview-cards-container .card-container {
+  scroll-snap-align: start;
+}

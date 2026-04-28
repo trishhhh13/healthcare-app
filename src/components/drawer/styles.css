@@ -1,0 +1,43 @@
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  transition: margin 0.3s ease-in-out;
+}
+
+.drawer-hidden {
+  margin-left: -200px;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.drawer-content {
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+}
+
+.drawer-container button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.drawer-container button:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,48 @@
+.home-container {
+  padding: 16px;
+}
+
+.home-container p {
+  margin: 0;
+}
+
+.home-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.welcome-message {
+  margin-top: 20px !important;
+  font-size: 16px;
+  margin-bottom: 8px !important;
+}
+
+.welcome-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.grid-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grid-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.grid-right {
+  display: flex;
+  flex-direction: column;
+}

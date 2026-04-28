@@ -1,15 +1,10 @@
-import { useState, Dispatch, SetStateAction } from 'react'
+import { useState } from 'react'
 import { Bell, Menu, X } from 'lucide-react'
 import './styles.css'
 import ProfileIcon from '../profileIcon'
 import { NOTIFICATIONS_DATA } from '../../utils/dummyData'
 
-interface NavBarProps {
-  toggleDrawerVisibility: Dispatch<SetStateAction<boolean>>;
-  setCurrentScreen?: Dispatch<SetStateAction<string>>;
-}
-
-const NavBar = ({ toggleDrawerVisibility, setCurrentScreen }: NavBarProps) => {
+const NavBar = ({ toggleDrawerVisibility, setCurrentScreen }: { toggleDrawerVisibility: any, setCurrentScreen?: any }) => {
   const [hasUnread, setHasUnread] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 

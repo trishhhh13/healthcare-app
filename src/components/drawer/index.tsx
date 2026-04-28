@@ -1,4 +1,3 @@
-import { Dispatch, SetStateAction } from 'react'
 import './styles.css'
 import { SCREENS } from '../../utils/constants'
 import AppLogo from '../appLogo'
@@ -7,13 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../../services/firebase'
 import { signOut } from 'firebase/auth'
 
-interface DrawerProps {
-  setCurrentScreen?: Dispatch<SetStateAction<string>>;
-  currentScreen?: string;
-  isVisible?: boolean;
-}
-
-const Drawer = ({ setCurrentScreen, currentScreen = "", isVisible = true }: DrawerProps) => {
+const Drawer = ({ setCurrentScreen = (screen: string) => { return screen }, currentScreen = "", isVisible = true }) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -32,7 +25,7 @@ const Drawer = ({ setCurrentScreen, currentScreen = "", isVisible = true }: Draw
         {SCREENS.map((screen: { name: string, title: string, route: string }) => (
           <button
             key={screen.name}
-            onClick={() => setCurrentScreen?.(screen.name)}
+            onClick={() => setCurrentScreen(screen.name)}
             style={{ backgroundColor: currentScreen === screen.name ? '#f3f2fd' : 'transparent' }}
           >
             {screen.title}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Bell, Menu, X } from 'lucide-react'
 import './styles.css'
 import ProfileIcon from '../profileIcon'

@@ -1,4 +1,3 @@
-import React from 'react';
 import './dashboardWidgets.css';
 
 import { RECENT_APPOINTMENTS as appointments } from '../../utils/dummyData';

@@ -1,4 +1,3 @@
-import React from 'react'
 import './styles.css'
 import OverViewCards from '../overViewCards'
 import CommonAreaChart from '../../components/commonAreaChart'

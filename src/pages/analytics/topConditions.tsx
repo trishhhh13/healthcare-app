@@ -1,4 +1,3 @@
-import React from 'react';
 import '../home/dashboardWidgets.css';
 
 import { TOP_CONDITIONS_DATA as conditions } from '../../utils/dummyData';

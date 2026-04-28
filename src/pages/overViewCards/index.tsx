@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from './card'
 import "./styles.css"
 import { OVERVIEW_CARDS } from '../../utils/constants'

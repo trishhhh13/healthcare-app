@@ -1,4 +1,3 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import AuthForm from './authForm'
 import { signUpWithEmail, loginWithGoogle } from '../../services/firebase'

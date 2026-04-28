@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Drawer from '../../components/drawer'
 import './styles.css'
 import Home from '../home'

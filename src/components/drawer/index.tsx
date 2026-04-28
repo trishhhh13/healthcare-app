@@ -1,4 +1,3 @@
-import React from 'react'
 import './styles.css'
 import { SCREENS } from '../../utils/constants'
 import AppLogo from '../appLogo'
@@ -7,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../../services/firebase'
 import { signOut } from 'firebase/auth'
 
-const Drawer = ({ setCurrentScreen = (screen: string) => { }, currentScreen = "", isVisible = true }) => {
+const Drawer = ({ setCurrentScreen = (screen: string) => { return screen }, currentScreen = "", isVisible = true }) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Phone, MapPin, Briefcase, Camera } from 'lucide-react';
 import './styles.css';
 

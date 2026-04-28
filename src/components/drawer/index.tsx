@@ -6,7 +6,17 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../../services/firebase'
 import { signOut } from 'firebase/auth'
 
-const Drawer = ({ setCurrentScreen = (screen: string) => { return screen }, currentScreen = "", isVisible = true }) => {
+interface DrawerProps {
+  setCurrentScreen?: (screen: string) => void;
+  currentScreen?: string;
+  isVisible?: boolean;
+}
+
+const Drawer = ({ 
+  setCurrentScreen = () => {}, 
+  currentScreen = "", 
+  isVisible = true 
+}: DrawerProps) => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
